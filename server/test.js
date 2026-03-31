@@ -12,4 +12,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
     fs.appendFileSync('test.log', `Server is running on http://localhost:${port}\n`);
 });
-});

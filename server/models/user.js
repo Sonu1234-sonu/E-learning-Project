@@ -18,6 +18,10 @@ const schema = new mongoose.Schema({
         type: String,
         default: "user"
     },
+    isEmailVerified: {
+        type: Boolean,
+        default: false,
+    },
     subscription: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: "Course",
