@@ -24,7 +24,7 @@ const schema = new mongoose.Schema({
     },
     subscription: [{
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Course",
+        ref: "Courses",
     }],
 }, { timestamps: true, })
 export const User = mongoose.model("User", schema)
